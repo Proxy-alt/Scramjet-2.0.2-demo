@@ -1,0 +1,8 @@
+{
+    "initPath": "https://cdn.jsdelivr.net/npm/@mercuryworkshop/scramjet@2.0.2-alpha/dist/",
+    "controllerPath": "https://cdn.jsdelivr.net/npm/@mercuryworkshop/scramjet-controller@0.0.9/dist/",
+    "embedFrameId": "EmbedFrameId",
+    "statusElId": "statusElId",
+    "wispURL": "wss://anura.pro/wisp/",
+    "scope": "/Scopeythingy/"
+}
