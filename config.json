@@ -4,5 +4,6 @@
     "embedFrameId": "EmbedFrameId",
     "statusElId": "statusElId",
     "wispURL": "wss://anura.pro/wisp/",
-    "scope": "/Scopeythingy/"
+    "scope": "/Scopeythingy/",
+    "ClientGlobalObject": "window.GlobalObjectYourClientExposes"
 }
