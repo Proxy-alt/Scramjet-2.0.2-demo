@@ -47,7 +47,6 @@ async function main() {
         statusEl.textContent = `Error: ${err.message}`;
         console.error('Harness init error:', err);
     });
-    await init();
     return frame
 }
 
