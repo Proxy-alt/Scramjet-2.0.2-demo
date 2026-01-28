@@ -1,5 +1,4 @@
 const { Controller, config } = $scramjetController;
-const LibcurlClient = window.LibcurlTransport.LibcurlClient;
 let frame;
 async function main() {
     const ScramjetConfig = await fetch('./config.json').then(sjJson => sjJson.json());
@@ -10,6 +9,7 @@ async function main() {
     const embedFrame = document.getElementById(ScramjetConfig.embedFrameId);
     const wispUrl = ScramjetConfig.wispURL;
     const scope = ScramjetConfig.scope;
+    const Client = ScramjetConfig.ClientGlobalObject;
 
     config.prefix = scope;
     config.wasmPath = `${initPath}scramjet.wasm`;
@@ -29,7 +29,7 @@ async function main() {
 
         statusEl.textContent = 'Initializing controller...';
 
-        const transport = new LibcurlClient({ wisp: wispUrl });
+        const transport = new Client({ wisp: wispUrl });
 
         const controller = new Controller({
             serviceworker: registration.active,
