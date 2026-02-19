@@ -19,7 +19,7 @@ async function main() {
     async function init() {
         statusEl.textContent = "Registering service worker...";
 
-        const registration = await navigator.serviceWorker.register("/sw.js");
+        const registration = await navigator.serviceWorker.register("./sw.js");
 
         // Wait for the service worker to be ready
         if (!navigator.serviceWorker.controller) {
